@@ -9,6 +9,10 @@ This repository contains the source code and experimental data for the research 
 
 The project aims to develop a robust classification model using the **K-Nearest Neighbor (K-NN)** algorithm to classify three physiological states: **Normal, Stress, and Fatigue**. By integrating **Body Temperature** alongside **Heart Rate** and **Galvanic Skin Response (GSR)**, this study successfully isolates fatigue (hypometabolism) from stress (hypermetabolism) with high precision.
 
+<p align="center">
+  <img src="images/diagram_sistem.jpg" alt="System Architecture" width="700"/>
+</p>
+
 ## 🚀 Key Features & Novelty
 * **Multi-Sensor Fusion:** Integration of Heart Rate, GSR, and Body Temperature for 3-class classification.
 * **Normalization Comparative Analysis:** A rigorous head-to-head comparison between `Z-Score (StandardScaler)` and `Min-Max (MinMaxScaler)`.
@@ -18,26 +22,26 @@ The project aims to develop a robust classification model using the **K-Nearest 
 ## 📂 Repository Structure
 * `/dataset`: Contains the `Stress-Lysis.csv` dataset used for the experiments.
 * `/notebooks`: Contains the Jupyter Notebook (`.ipynb`) with the full pipeline (Preprocessing, K-NN Modeling, and Evaluation).
-* `/images`: Contains high-resolution grayscale visualizations generated during the experiments.
+* `/images`: Contains high-resolution grayscale visualizations generated during the experiments (`diagram_sistem.jpg`, `cm_baseline.png`, `kurva_k_optimasi.png`, `boxplot_cv.png`, `bar_normalisasi.png`).
 
 ## 📊 Key Results
 
 * **Hold-out Accuracy (80:20):** 100% across all preprocessing techniques due to the high deterministic separability of the dataset.
 
 <p align="center">
-  <img src="images/cm_baseline_bw.png" alt="Confusion Matrix Baseline" width="500"/>
+  <img src="images/cm_baseline.png" alt="Confusion Matrix Baseline" width="500"/>
 </p>
 
 * **Model Stability (10-Fold CV):** Z-Score and Min-Max normalizations significantly improved model stability, reducing the standard deviation from **0.40% (RAW)** down to **0.20%**. 
 
 <p align="center">
-  <img src="images/boxplot_cv_bw.png" alt="Boxplot 10-Fold CV Stability" width="600"/>
+  <img src="images/boxplot_cv.png" alt="Boxplot 10-Fold CV Stability" width="600"/>
 </p>
 
 * **Optimal K:** K=5 was selected as the optimal hyperparameter.
 
 <p align="center">
-  <img src="images/kurva_k_bw.png" alt="K-Value Optimization Curve" width="600"/>
+  <img src="images/kurva_k_optimasi.png" alt="K-Value Optimization Curve" width="600"/>
 </p>
 
 * **Recommendation:** **Z-Score Normalization** is recommended for physiological sensor data due to its robustness against outliers.
