@@ -50,7 +50,7 @@ The project aims to develop a robust classification model using the **K-Nearest 
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/yourusername/knn-stress-fatigue-detection.git](https://github.com/yourusername/knn-stress-fatigue-detection.git)
+   git clone https://github.com/rafaz-electrics/knn-physiological-stress-fatigue-detection.git
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
