@@ -21,16 +21,37 @@ The project aims to develop a robust classification model using the **K-Nearest 
 * `/images`: Contains high-resolution grayscale visualizations generated during the experiments.
 
 ## 📊 Key Results
+
 * **Hold-out Accuracy (80:20):** 100% across all preprocessing techniques due to the high deterministic separability of the dataset.
+
+<p align="center">
+  <img src="images/cm_baseline_bw.png" alt="Confusion Matrix Baseline" width="500"/>
+</p>
+
 * **Model Stability (10-Fold CV):** Z-Score and Min-Max normalizations significantly improved model stability, reducing the standard deviation from **0.40% (RAW)** down to **0.20%**. 
+
+<p align="center">
+  <img src="images/boxplot_cv_bw.png" alt="Boxplot 10-Fold CV Stability" width="600"/>
+</p>
+
 * **Optimal K:** K=5 was selected as the optimal hyperparameter.
+
+<p align="center">
+  <img src="images/kurva_k_bw.png" alt="K-Value Optimization Curve" width="600"/>
+</p>
+
 * **Recommendation:** **Z-Score Normalization** is recommended for physiological sensor data due to its robustness against outliers.
 
 ## 🛠️ How to Run
+
 1. Clone this repository:
    ```bash
    git clone [https://github.com/yourusername/knn-stress-fatigue-detection.git](https://github.com/yourusername/knn-stress-fatigue-detection.git)
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-4. Open the Jupyter Notebook in /notebooks to run the simulations.
+3. Open the Jupyter Notebook in /notebooks to run the simulations.
+
+👨‍💻 Author
+Radithya Farrella Azmi
+Institution: Universitas Negeri Malang
