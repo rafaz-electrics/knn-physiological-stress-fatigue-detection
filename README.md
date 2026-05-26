@@ -56,6 +56,6 @@ The project aims to develop a robust classification model using the **K-Nearest 
    pip install -r requirements.txt
 3. Open the Jupyter Notebook in /notebooks to run the simulations.
 
-👨‍💻 Author
-Radithya Farrella Azmi
-Institution: Universitas Negeri Malang
+## 👨‍💻 Author
+*Radithya Farrella Azmi
+*Institution: Universitas Negeri Malang
