@@ -57,5 +57,7 @@ The project aims to develop a robust classification model using the **K-Nearest 
 3. Open the Jupyter Notebook in /notebooks to run the simulations.
 
 ## 👨‍💻 Author
-*Radithya Farrella Azmi
-*Institution: Universitas Negeri Malang
+
+Radithya Farrella Azmi
+
+Institution: Universitas Negeri Malang
